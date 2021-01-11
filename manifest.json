@@ -1,0 +1,37 @@
+{
+  "name": "niftii2png_activation_map",
+  "label": "Nifti to png activation map",
+  "description": "Creates activation map plots from niftii files and saves them as .png files.",
+  "version": "0.0.0_dev",
+  "custom": {
+    "gear-builder": {
+      "category": "converter",
+      "image": "flywheel/niftii2png_activation_map:0.0.0_dev"
+    }
+  },
+  "inputs": {
+    "nifti": {
+      "base": "file",
+      "description": "A nifti file ('.nii.gz', '.nii')",
+      "optional": false,
+      "type": {
+        "enum": [
+          "nifti"
+        ]
+      }
+    },
+  "api-key": {
+    "base": "api-key",
+    "read-only": true
+  }
+  },
+  "config": {},
+  "environment": {},
+  "command": "python run.py",
+  "author": "NIPY <nipy.org>",
+  "maintainer": "https://github.com/jiavila",
+  "cite": "",
+  "license": "Other",
+  "source": "https://github.com/jiavila/niftii2png_activation_map",
+  "url": ""
+}
