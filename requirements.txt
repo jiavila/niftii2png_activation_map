@@ -2,3 +2,4 @@ nipy
 numpy
 scipy
 nibabel
+flywheel-sdk==11.3.1
