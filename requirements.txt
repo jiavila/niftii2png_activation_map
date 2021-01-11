@@ -1,5 +1,6 @@
 nipy
-numpy
+numpy==1.17
 scipy
 nibabel
 flywheel-sdk==11.3.1
+matplotlib
