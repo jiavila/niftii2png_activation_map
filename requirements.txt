@@ -1,0 +1,4 @@
+nipy
+numpy
+scipy
+nibabel
