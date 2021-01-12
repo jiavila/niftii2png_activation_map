@@ -37,4 +37,4 @@ colormaps is as follows:
 
 The .png image of the x, y, and z viewpoint plots of brain fMR image, it is
 saved with the same name as the input nifti file but with the '.png' extension. 
-This is store in the default Flywheel output directory (`flywheel/v0/output`)
+This is stored in the default Flywheel output directory (`flywheel/v0/output`)
