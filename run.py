@@ -2,6 +2,7 @@ import flywheel
 import logging
 from pprint import pformat
 import niftii2png_activation_map
+import os
 
 DEBUG = True
 
@@ -60,12 +61,19 @@ def main():
         if not name:
             raise KeyError(f"Input file location did not contain 'name' key.")
 
-
+        # ---------------------------------------------------------------------
+        # Plot and save activation map based on user config options
+        # ---------------------------------------------------------------------
+        # Save the figure to the flywheel output as .png
+        dir_out = "/flywheel/v0/output/"
+        name_out = name.split('.')[0] + '.png'
+        path_out = os.path.join(dir_out, name_out)
         niftii2png_activation_map.create_png_activation_maps_from_niftii(
-            path=path)
-
-
-
+            path=path,
+            path_out=path_out,
+            fig_rez=gear_context.config.get("fig_rez"),
+            cmap=gear_context.config.get("cmap")
+        )
 
 
 if __name__ == "__main__":

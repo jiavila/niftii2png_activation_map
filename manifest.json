@@ -25,7 +25,18 @@
     "read-only": true
   }
   },
-  "config": {},
+  "config": {
+    "fig_rez": {
+      "type": "string",
+      "description": "Set the size of of the plotted activation map ('720p' or '1080p')",
+      "default": "720p"
+    },
+    "cmap": {
+      "type": "string",
+      "description": "The colormap of the activation map. (e.g., 'gray', 'rainbow'). See README.md for all options.",
+      "default": "gray"
+    }
+  },
   "environment": {},
   "command": "python run.py",
   "author": "NIPY <nipy.org>",
