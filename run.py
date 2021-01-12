@@ -4,7 +4,7 @@ from pprint import pformat
 import niftii2png_activation_map
 import os
 
-DEBUG = True
+DEBUG = False
 
 # config debugger
 logging.basicConfig()
